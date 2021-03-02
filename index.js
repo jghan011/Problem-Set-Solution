@@ -15,28 +15,32 @@ function reverseCharactersButNotWords(inputSentence) {
 reverseCharactersButNotWords("why are you here?");
 
     // PROBLEM 1//
+    function isNumberDivisible() {
+
         var total = 0
 
-    for( var x = 0; x >= total; x++){
-        total =+ x;
-        x++;
-     if(total % 2 === 0){ 
-            console.log("foo");
+        for( var x = 0; x >= total; x++){
+            total =+ x;
+            x++;
+         if(total % 2 === 0){ 
+                console.log("foo");
+            }
+    
+         if(total % 3 === 0 ){
+              console.log("bar");
+            }
+    
+         if(total % 6 === 0){
+           console.log("baz");
+            }
+    
+        else{
+                console.log(x);
+             }
+    
         }
-
-     if(total % 3 === 0 ){
-          console.log("bar");
-        }
-
-     if(total % 6 === 0){
-       console.log("baz");
-        }
-
-    else{
-            console.log(x);
-         }
 
     }
-
+      isNumberDivisible();
     
   
