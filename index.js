@@ -1,46 +1,45 @@
+// // PROBLEM 0 //
+function isNumberDivisible() {
+  var total = 44;
 
-    // PROBLEM 0 //
+  for (var x = 1; x <= total; x++) {
+    if (x % 2 === 0 && x % 6 !=0) {
+      console.log("foo");
+    } 
+
+  else if (x % 3 === 0 && x % 6 != 0) {
+      console.log("bar");
+    }
+
+    else if (x % 6 === 0) {
+      console.log("baz");
+    } else {
+      console.log(x);
+    }
+  }
+}
+isNumberDivisible();
+
+// PROBLEM 1 //
 
 function reverseCharactersButNotWords(inputSentence) {
-    var splitString = inputSentence.split('');
+  var splitString = inputSentence.split("");
 
     var reverseString = splitString.reverse();
 
-    var joinArray = reverseString.join('')
-   
-    console.log(joinArray);
-    return joinArray
+   var joinArray = reverseString.join("");
 
-}
-reverseCharactersButNotWords("why are you here?");
+    var splitAgain = joinArray.split(" ");
 
-    // PROBLEM 1//
-    function isNumberDivisible() {
+     var reverseAgain = splitAgain.reverse();
 
-        var total = 0
+  var joinAgain = reverseAgain.join(" ");
 
-        for( var x = 0; x >= total; x++){
-            total =+ x;
-            x++;
-         if(total % 2 === 0){ 
-                console.log("foo");
-            }
-    
-         if(total % 3 === 0 ){
-              console.log("bar");
-            }
-    
-         if(total % 6 === 0){
-           console.log("baz");
-            }
-    
-        else{
-                console.log(x);
-             }
-    
-        }
 
-    }
-      isNumberDivisible();
-    
+
   
+
+  console.log(joinAgain);
+   return joinAgain;
+}
+reverseCharactersButNotWords("the cat is fat");
